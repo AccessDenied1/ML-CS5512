@@ -1,0 +1,13 @@
+This is an assignment on Hidden Markov Model
+
+In this assignment, you will implement solutions to the three problems associated with HMMs: evaluation, decoding and training. 
+
+The HMM you will build and use will have only 2 states. The output symbols are the 27 case-insensitive letters of English (A-Z plus space).
+
+Preprocessing: Inspect the (very modest!) "hmm-train". Clean it up by making all letters uppercase, replacing all non-alphabetic characters (numbers, punctuation, and whitespace, including line breaks) with spaces, and then collapsing sequences of spaces to be one space (this should take 2-3 lines of python/matlab code). You will be treating this dataset as a stream of characters (that's why we don't want any line breaks).
+Using your knowledge of language, suggest a "natural" 2-state HMM model with transition and emission probabilities defined by you. Try to think of two meaningful states between which the data as a string of characters is transitioning. You are allowed and encouraged to do any measurement on the training data to optimize the proposed HMM, but you are NOT allowed to use the forward-backward training algorithm learned in class. Please propose any model (and the probabilities) that you think is reasonable, and don't spend too much time to generate the "best" HMM. Draw the two states and show the transition probabilities of your model (similar to the drawing in the slides). Also show the 7 most likely characters in each of the two emission distributions with their probabilities. (All this can be done by hand if preferred).
+Implement the an algorithm for training the two-state HMM model. Print out and inspect the final transition and emission probabilities. Draw the two states and show the transition probabilities and the 7 most likely characters in each of the two emission distributions, with their probabilities. Can you interpret the emergent states?
+Compare the model  of the "natural" HMM you proposed in (2) with the HMMs trained by the code(3). Does the natural HMM perform better than the trained HMMs? Now initialise the HMM to this natural solution, and then run the training algorithm from this starting point. Can this degrade the natural solution? Did you succeed in improving on the solution in? Is there any change in training time ? What do you learn from that ?
+Using your best solution, evaluate  this test set (after cleaning it up). Compare it to the training set. Is there significant overfitting? (You hardly need to write any new code for this!)
+
+
